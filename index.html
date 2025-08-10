@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEE English Institute</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #facc15; color: #111; }
+    header, footer { padding: 1rem 2rem; background: #fffbe6; }
+    header h1 { margin: 0; font-size: 1.8rem; }
+    nav a { margin: 0 0.5rem; text-decoration: none; color: #111; }
+    .hero { display: flex; flex-wrap: wrap; align-items: center; padding: 2rem; }
+    .hero-text { flex: 1; min-width: 280px; }
+    .hero img { max-width: 350px; }
+    .section { padding: 2rem; background: #fffbe6; margin: 1rem; border-radius: 10px; }
+    .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    button, .btn { background: black; color: #facc15; border: none; padding: 0.8rem 1.2rem; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; }
+    form { display: flex; flex-direction: column; gap: 0.5rem; }
+    input, textarea { padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BEE English Institute</h1>
+    <nav>
+      <a href="#about">Quiénes somos</a>
+      <a href="#courses">Cursos</a>
+      <a href="#pricing">Precios</a>
+      <a href="#contact" class="btn">Inscribite</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Aprendé inglés jugando, hablando y creando</h2>
+      <p>Clases presenciales y online para todas las edades — desde 3 años en adelante.</p>
+      <a href="#contact" class="btn">Inscribite ahora</a>
+    </div>
+    <img src="bee-illustration.png" alt="Bee mascot" />
+  </section>
+
+  <section id="about" class="section">
+    <h3>Nuestra filosofía</h3>
+    <p>En BEE creemos que aprender un idioma debe ser una experiencia alegre y significativa.</p>
+  </section>
+
+  <section id="courses" class="section">
+    <h3>Cursos</h3>
+    <div class="cards">
+      <div class="card"><h4>Mini BEES</h4><p>3-6 años. Clases lúdicas y material audiovisual.</p></div>
+      <div class="card"><h4>Kids</h4><p>7-12 años. Proyectos y profesores bilingües.</p></div>
+      <div class="card"><h4>Teen & Adult</h4><p>Conversación y preparación internacional.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <h3>Planes y precios</h3>
+    <div class="cards">
+      <div class="card"><h4>Regular</h4><p>AR$ 8.000 / mes</p></div>
+      <div class="card"><h4>Intensivo</h4><p>AR$ 12.000 / mes</p></div>
+      <div class="card"><h4>Particular</h4><p>AR$ 3.000 / clase</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contacto</h3>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="tel" placeholder="Teléfono" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>BEE English Institute — © 2025</p>
+  </footer>
+</body>
+</html>
